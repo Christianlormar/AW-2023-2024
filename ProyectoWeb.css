@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    background-image: url(./Imágenes/forest-1072828_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header h1,footer{
+    background-color: chocolate;
+    color: blue;
+    text-shadow: 0px 5px 5px black;
+    text-align: center;
+    padding: 10px;
+    border: 5px dashed greenyellow;
+    border-radius: 25px;
+    font-family: "RubikBubbles";
+    box-shadow: 5px 2px 10px orchid;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+
+@font-face {
+    font-family: "RubikBubbles";
+    src: url(./Fuentes/Rubik_Bubbles/RubikBubbles-Regular.ttf);
+}
+
+@font-face {
+    font-family: "LT Funk";
+    src: url(./Fuentes/LT\ Funk.otf);
+}
+
+@font-face {
+    font-family: "Nova_Square";
+    src: url(./Fuentes/Nova_Square/NovaSquare-Regular.ttf);
+}
+
+.menu{
+    border: groove blueviolet;
+    overflow: hidden;
+    background-color: blueviolet;
+}
+
+.menu a{
+    display: block;
+    width: 20%;
+    float: left;
+    background-color: red;
+    text-decoration: none;
+    text-align: center;
+    color: blueviolet;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+.menu a:hover{
+    background-image: linear-gradient(to bottom right,#FF4F4F,#4FFF4F,#4F4FFF);
+    transform: skew(5deg,5deg) rotate(360deg);
+}
+
+.separador{
+    padding: 10px;
+}
+
+.separador2{
+    padding: 30px;
+}
+
+#listas{
+    background-color: bisque;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+ol ol{
+    list-style-type: upper-alpha;
+}
+
+dd{
+    margin-left: 50px;
+}
+
+.marcador{
+    background-image: linear-gradient(to bottom,aqua,crimson);
+    border-radius: 25px;
+    width: 35%;
+    color: #4FFF4F;
+    padding: 5px;
+    font-family: "LT Funk";
+    box-shadow: 0px 5px 5px crimson;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+}
+
+.galeria img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+
+.galeria img:hover{
+    transform: scale(1.1);
+}
+
+.biografia,table{
+    background-image: radial-gradient(#FF4FFF,#FFFF4F);
+    padding: 10px;
+    font-family: "Nova_Square";
+}
+
+.biografia img{
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+table{
+    border-collapse: collapse;
+    box-shadow: 5px 5px magenta;
+    margin: auto;
+}
+
+th{
+    background-color: chocolate;
+    color: blue;
+    font-family: "RubikBubbles";
+    text-shadow: 0px 5px 5px black;
+}
+
+th,td{
+    padding: 10px;
+    border: 5px dashed greenyellow;
+}
+article{
+    column-count: 3;
+    column-rule: 10px dotted #4FFFFF;
+    column-gap: 2em;
+    padding-top: 10px;
+}
+
+article::first-letter{
+    color: #4FFFFF;
+    font-size: 3em;
+}
+
+article::selection{
+    background-color: brown;
+}
+
+.mundo{
+    position: relative;
+    width: 50%;
+}
+
+.imagenMundo{
+    display: block;
+    width: 100%;
+    height: 100%;
+    height: auto;
+}
+
+.elMundo{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.mundo:hover .elMundo{
+    opacity: 1;
+}
+
+.pasaporte{
+    width: 100%;
+    height: 100%;
+}
